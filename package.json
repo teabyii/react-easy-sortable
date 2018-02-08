@@ -10,7 +10,8 @@
     "build": "rollup -c",
     "publish": "rollup -c & npm publish",
     "coverage": "jest --coverage",
-    "test": "jest"
+    "test": "jest",
+    "precommit": "lint-staged"
   },
   "repository": "git@github.com:teabyii/react-sortable-list.git",
   "author": "teabyii <teabyii@gmail.com>",
@@ -20,7 +21,9 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "husky": "^0.14.3",
     "jest": "^22.2.1",
+    "lint-staged": "^6.1.0",
     "rollup": "^0.55.3",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
