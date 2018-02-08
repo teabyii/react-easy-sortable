@@ -2,10 +2,14 @@
   "name": "react-sortable-list",
   "version": "0.1.0",
   "description": "Sortable List Component with React",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "src/index.js",
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "build": "rollup -c",
+    "publish": "rollup -c & npm publish",
+    "coverage": "jest --coverage",
     "test": "jest"
   },
   "repository": "git@github.com:teabyii/react-sortable-list.git",
@@ -13,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^22.2.1",
+    "rollup": "^0.55.3",
     "standard": "^10.0.3"
   },
   "peerDependencies": {
