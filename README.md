@@ -1,6 +1,7 @@
 # react-easy-sortable
 
 Sortable list component with react that should be easy to use :tada::tada::tada:
+
 [![npm version](https://badge.fury.io/js/react-easy-sortable.svg)](https://badge.fury.io/js/react-easy-sortable)
 
 ## Installation

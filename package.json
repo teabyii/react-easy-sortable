@@ -1,6 +1,6 @@
 {
   "name": "react-easy-sortable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sortable List Component with React",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -8,10 +8,10 @@
     "lint": "standard",
     "lint:fix": "standard --fix",
     "build": "rollup -c",
-    "publish": "rollup -c & npm publish",
+    "prepare": "rollup -c",
     "coverage": "jest --coverage",
-    "test": "jest",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": "git@github.com:teabyii/react-sortable-list.git",
   "keywords": [
@@ -27,13 +27,16 @@
   "author": "teabyii <teabyii@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/react": "^3.3.12",
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
-    "jest": "^22.2.1",
     "lint-staged": "^6.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "rollup": "^0.55.3",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
@@ -41,7 +44,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.2.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "lint-staged": {
     "*.js": [

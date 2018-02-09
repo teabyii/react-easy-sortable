@@ -1,0 +1,12 @@
+.box {
+  padding: 10px 30px;
+  width: 40px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 5px;
+}
+
+.horizontal {
+  display: inline-block;
+}
