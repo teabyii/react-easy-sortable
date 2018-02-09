@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
  * @class Item
  * @extends {Component}
  */
-export class Item extends Component {}
+export class SortableItem extends Component {}
 
 /**
  * SortableList Component
@@ -146,7 +146,7 @@ export class SortableList extends Component {
 
     if (Array.isArray(node)) {
       node.forEach(child => this.wrap(child))
-    } else if (node.type === Item) {
+    } else if (node.type === SortableItem) {
       const index = this.items.length
       const item = (
         <div
@@ -182,7 +182,7 @@ export class SortableList extends Component {
 
     if (Array.isArray(node)) {
       return node.map(child => this.sort(child))
-    } else if (node.type === Item) {
+    } else if (node.type === SortableItem) {
       const index = this.state.list[this.count++]
       const item = this.items[index]
       return item

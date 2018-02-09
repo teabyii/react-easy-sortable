@@ -1,5 +1,5 @@
 {
-  "name": "react-sortable-list",
+  "name": "react-easy-sortable",
   "version": "0.1.0",
   "description": "Sortable List Component with React",
   "main": "lib/index.js",
@@ -14,6 +14,16 @@
     "precommit": "lint-staged"
   },
   "repository": "git@github.com:teabyii/react-sortable-list.git",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "component",
+    "sortable",
+    "sortable-list",
+    "list",
+    "sortable list"
+  ],
   "author": "teabyii <teabyii@gmail.com>",
   "license": "MIT",
   "devDependencies": {
